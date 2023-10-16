@@ -1,0 +1,11 @@
+/* BackgroundComponent.css */
+.background-image {
+    width: 75%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('your-image-url.jpg'); 
+    background-size: cover;
+  }
+  
