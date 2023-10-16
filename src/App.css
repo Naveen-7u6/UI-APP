@@ -1,6 +1,17 @@
 .App {
-  text-align: center;
+text-align: center;
+  
 }
+
+
+.registration-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .App-logo {
   height: 40vmin;
