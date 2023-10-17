@@ -18,11 +18,15 @@ export default function ResetPassMail(props) {
       [name]: value,
     });
   };
+  const containsUppercase = (str) => /[A-Z]/.test(str);
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = {};
-    if (formData.password.length < 6) {
-      validationErrors.password = "Password must be at least 6 characters long";
+    if (formData.password.length < 5) {
+      validationErrors.password = "Password must be at least 5 characters long";
+    }
+    if (!containsUppercase(formData.password)) {
+      validationErrors.password = "Password must contain at least one uppercase letter";
     }
     if (formData.password !== formData.reEnterPassword) {
       validationErrors.reEnterPassword = "Passwords do not match";
