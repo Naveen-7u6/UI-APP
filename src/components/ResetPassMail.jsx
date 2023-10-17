@@ -20,6 +20,7 @@ export default function ResetPassMail(props) {
   };
   const containsUppercase = (str) => /[A-Z]/.test(str);
   const handleSubmit = (e) => {
+    
     e.preventDefault();
     const validationErrors = {};
     if (formData.password.length < 5) {
